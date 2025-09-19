@@ -1,5 +1,5 @@
 import React from "react";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaShoppingCart, FaUser } from "react-icons/fa6";
 
 function IconsSection() {
   return (
