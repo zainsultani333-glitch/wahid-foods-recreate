@@ -134,7 +134,9 @@ function LandingProducts() {
 
   return (
     <section className="py-16 px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 text-[#00809d]">
+        Our Products
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
         {productsData.map((product) => (
@@ -154,7 +156,9 @@ function LandingProducts() {
               <p className="text-[#00809d] font-semibold mt-1">
                 {product.price}
               </p>
-              <p className="text-gray-600 mt-1">Flavour: {product.flavour}</p>
+              <p className="text-gray-600 mt-1 bg-[#cff4be] p-1 px-3 rounded-full text-sm font-normal">
+                Flavour: {product.flavour}
+              </p>
               <p className="text-gray-700 mt-2 flex-grow">
                 {product.details.length > 100
                   ? product.details.slice(0, 100) + "..."
@@ -164,9 +168,11 @@ function LandingProducts() {
                 </span>
               </p>
               <div className="mt-4 flex justify-between">
-                <button className="border px-3 py-1 rounded">In Stock</button>
-                <button className="bg-[#00809d] text-white px-3 py-1 rounded hover:bg-[#006b82] transition">
-                  Cart
+                <button className=" px-3 py-1 font-normal text-xs text-green-600">
+                  In Stock
+                </button>
+                <button className="bg-[#00809d] text-white px-3 py-1 rounded hover:bg-[#006b82] transition font-medium text-xs">
+                  Add to Cart
                 </button>
               </div>
             </div>

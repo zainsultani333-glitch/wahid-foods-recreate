@@ -102,12 +102,11 @@ function Products() {
       ? productsData
       : productsData.filter((p) => p.category === selectedCategory);
 
-  // Animation variants for framer-motion
   const container = {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.1, // stagger cards one by one
+        staggerChildren: 0.1,
       },
     },
   };
@@ -120,6 +119,11 @@ function Products() {
   return (
     <div className="bg-[#f9fafb] min-h-screen">
       <section className="py-16 px-6 max-w-7xl mx-auto">
+        {/* Heading */}
+        <h1 className="text-3xl font-bold text-center text-[#00809d] mb-8">
+          All Products
+        </h1>
+
         {/* Category Tabs */}
         <div className="flex justify-center flex-wrap gap-4 mb-8">
           {categories.map((cat, index) => (
@@ -143,7 +147,7 @@ function Products() {
           variants={container}
           initial="hidden"
           animate="show"
-          key={selectedCategory} // re-animate on category change
+          key={selectedCategory}
         >
           <AnimatePresence>
             {filteredProducts.map((product) => (
@@ -176,7 +180,7 @@ function Products() {
                     </span>
                   </p>
                   <div className="mt-4 flex justify-between">
-                    <button className=" py-1 rounded font-normal text-xs text-green-600">
+                    <button className="py-1 rounded font-normal text-xs text-green-600">
                       In Stock
                     </button>
                     <button className="bg-[#00809d] text-white px-3 py-1 rounded hover:bg-[#006b82] transition font-medium text-xs">
