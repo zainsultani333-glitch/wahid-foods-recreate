@@ -26,7 +26,7 @@ function Footer() {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-4 flex-grow">
             <li>
-              <a href="#" className="hover:text-[#00809d]">
+              <a href="/Products" className="hover:text-[#00809d]">
                 All Products
               </a>
             </li>

@@ -28,7 +28,7 @@ function AppSection() {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="flex flex-col items-center jus bg-[#f5fafd] p-8 rounded-2xl shadow-md w-full max-w-md hover:border hover:border-[#00809d] hover:shadow-xl transition-all duration-300"
+            className="flex flex-col items-center jus bg-white p-8 rounded-2xl shadow-md w-full max-w-md hover:border hover:border-[#00809d] hover:shadow-xl transition-all duration-300"
           >
             <div className="bg-[#eaf7f4] p-6 rounded-full mb-6">
               <FaAndroid className="text-[#00809d] text-5xl" />
@@ -72,7 +72,7 @@ function AppSection() {
           <div
             data-aos="fade-up"
             data-aos-duration="2000"
-            className="flex flex-col items-center bg-[#f5fafd] p-8 rounded-2xl shadow-md w-full max-w-md hover:border hover:border-[#00809d] hover:shadow-xl transition-all duration-300"
+            className="flex flex-col items-center bg-white p-8 rounded-2xl shadow-md w-full max-w-md hover:border hover:border-[#00809d] hover:shadow-xl transition-all duration-300"
           >
             <div className="bg-[#eaf7f4] p-6 rounded-full mb-6">
               <FaApple className="text-[#00809d] text-5xl" />
